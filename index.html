@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>tmux - @belfastruby Lightning Talk</title>
+
+		<meta name="description" content="Lightning talk on tmux for Belfast Ruby. 2nd October 2013">
+		<meta name="author" content="Stephen McCullough (swmcc)">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>tmux</h1>
+					<h3>Lightning Talk</h3>
+					<p>
+						<small>Created by <a href="http://swm.cc">Stephen McCullough</a> / <a href="http://twitter.com/swmcc">@swmcc</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Tmux - what does it do?</h2>
+					<p>
+                                        It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. And do a lot more.
+					</p>
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>What I use it for?</h2>
+						<p>
+					      <ul>
+						<li>Connecting to lots of servers</li>
+						<li>Keeps work & 'play' separate</li>
+						<li>Developing</li>
+						<li>Faster feedback loop (recent)</li>
+					      </ul>
+						</p>
+					</section>
+					<section>
+						<h2>Connecting to lots of servers</h2>
+						<p>If you have to connect to lots of servers or even worse lots of 'tin' then tmux helps you out.</p>
+					</section>
+					<section>
+						<h2>Keep work & 'play' separate</h2>
+						<p>I am easily distracted. I work in full screen mode. Mostly inside the terminal (depending on my mood).</p>
+					</section>
+					<section>
+						<h2>Developing</h2>
+						<p>I have found tmux so useful it helps me:
+					      <ul>
+						<li>Keep track of my work</li>
+						<li>Helps me set up projects (with helper scripts).</li>
+                                                <li>Projects are kept in their own eco system</li>
+                                              </ul>
+                                              </p>
+					</section>
+				<section>
+					<h2>Faster Feedback loop</h2>
+					<p>
+                                        A recent addition to my tmux enviros... 
+					</p>
+				</section>
+                                </section>
+
+				<section>
+					<h2>Warnings</h2>
+					<p>
+                                        For the love of fuck <strong>DO NOT MAP YOUR BINDINGS TO CTRL+A</strong> it'll screw with you for months and make you fat and bald.</p> 
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="http://www.dayid.org/os/notes/tm.html">David's Tmux Cheat Sheet</a></li>
+						<li><a href="http://lucapette.com/rails/tmux-for-rails-developers/">Tmux for Rails</a></li>
+						<li><a href="http://github.com/swmcc">My Github</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>FIN</h1>
+                                        <h3>By  / Stephen McCullough | http://swm.cc</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

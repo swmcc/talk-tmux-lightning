@@ -17,7 +17,7 @@ A very very quick lightning talk on tmux that I gave to Belfast Ruby in October 
 
 ## Links
 
-You can view the [slides](https://speakerdeck.com/swmcc/tmux-lightning-talk-at-belfastruby) or you can view the [webpage](http://tmux-lightning.talks.swm.cc/). Whichever you prefer.
+You can view the [slides](https://speakerdeck.com/swmcc/tmux-lightning-talk-at-belfastruby) or you can view the [webpage](http://swm.cc/talk-tmux-lightning). Whichever you prefer.
 
 ## Development Info
 

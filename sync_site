@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-rsync -avz --delete /Users/swm/Development/github/talks/talk-tmux-lightning swm@swm.cc:/web/talks.swm.cc/
